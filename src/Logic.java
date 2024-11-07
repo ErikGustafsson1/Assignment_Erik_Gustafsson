@@ -39,10 +39,10 @@ public class Logic {
                     characterCheck = true;
                     break;
                 }
-                else
-                {
-                    continue;
-                }
+//                else
+//                {
+//                    continue;
+//                }
             }
             if (characterCheck)
             {
@@ -53,7 +53,7 @@ public class Logic {
                 }
                 enterCounter++;
                 sb.append(textInput + space); // Adds a space to last word, making the characters +1
-                System.out.println("Input new string");
+                System.out.println("Input a new string:");
                 System.out.println(sb);
             }
             if(!characterCheck)
@@ -112,7 +112,7 @@ public class Logic {
     {
         int x = 0;
         int maxLength = 0;
-        boolean bool = true;
+        //boolean bool = true;
 
         for(int i = 0; i < sb.length(); i++)
         {
