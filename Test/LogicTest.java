@@ -4,35 +4,35 @@ import static org.junit.Assert.*;
 public class LogicTest {
     
     @Test
-    public void characterCounterReturn_12() {
+    public void testStringCharacterCount() {
         Logic logic = new Logic("What is life");
         logic.DisableInput();
-        logic.MainLogic();
-        assertEquals(12,logic.CharacterCounter());
+        logic.mainLogic();
+        assertEquals(12,logic.characterCounter());
     }
 
     @Test
-    public void lineCounterShouldReturn_1() {
+    public void testLineCounter() {
         Logic logic = new Logic("What is life");
         logic.DisableInput();
-        logic.MainLogic();
-        assertEquals(1,logic.LineCounter());
+        logic.mainLogic();
+        assertEquals(1,logic.lineCounter());
 
     }
 
     @Test
-    public void wordCounterShouldReturn_3() {
+    public void testWordCountReturn() {
         Logic logic = new Logic("What is life");
         logic.DisableInput();
-        logic.MainLogic();
-        assertEquals(3,logic.WordCounter());
+        logic.mainLogic();
+        assertEquals(3,logic.wordCounter());
     }
 
     @Test
-    public void stringShouldReturn_Clarification() {
+    public void testLongestWordInString() {
         Logic logic = new Logic("I need some Clarification on this subject");
         logic.DisableInput();
-        logic.MainLogic();
-        assertEquals("Clarification",logic.LongestWord());
+        logic.mainLogic();
+        assertEquals("Clarification",logic.longestWord());
     }
 }

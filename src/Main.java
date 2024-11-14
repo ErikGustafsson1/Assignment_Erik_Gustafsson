@@ -8,10 +8,10 @@ public class Main {
         System.out.println("Write a sentence.");
         String text = input.nextLine();
         Logic logic = new Logic(text);
-        logic.MainLogic();
-        System.out.println("The string has " + logic.LineCounter() + " lines.");
-        System.out.println("The string has " + logic.CharacterCounter() + " characters.");
-        System.out.println("The word count is " + logic.WordCounter() + ".");
-        System.out.println("The longest word in the string is " + logic.LongestWord() + ".");
+        logic.mainLogic();
+        System.out.println("The string has " + logic.lineCounter() + " lines.");
+        System.out.println("The string has " + logic.characterCounter() + " characters.");
+        System.out.println("The word count is " + logic.wordCounter() + ".");
+        System.out.println("The longest word in the string is " + logic.longestWord() + ".");
     }
 }

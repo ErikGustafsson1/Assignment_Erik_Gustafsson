@@ -26,7 +26,7 @@ public class Logic {
         disableInput = true;
     }
 
-    void MainLogic()
+    void mainLogic()
     {
         boolean characterCheck = false;
         while(textInput!=null) // Used to have value true
@@ -72,17 +72,17 @@ public class Logic {
         }
     }
 
-    public int CharacterCounter()
+    public int characterCounter()
     {
         return sb.length() -1; // -1 to compensate final space
     }
 
-    public int LineCounter()
+    public int lineCounter()
     {
         return enterCounter;
     }
 
-    public int WordCounter()
+    public int wordCounter()
     {
         boolean spaceDetected = true; // boolean used to have big B
         for(int i = 0; i<sb.length(); i++) // Checks if the string has a space and counts each one
@@ -108,7 +108,7 @@ public class Logic {
 
     }
 
-    public String LongestWord()
+    public String longestWord()
     {
         int x = 0;
         int maxLength = 0;
