@@ -39,10 +39,6 @@ public class Logic {
                     characterCheck = true;
                     break;
                 }
-//                else
-//                {
-//                    continue;
-//                }
             }
             if (characterCheck)
             {
@@ -112,7 +108,6 @@ public class Logic {
     {
         int x = 0;
         int maxLength = 0;
-        //boolean bool = true;
 
         for(int i = 0; i < sb.length(); i++)
         {
